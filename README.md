@@ -21,7 +21,7 @@ Dit is data afkomstig van een Amerikaanse Databank: U.S. Bureau of Labor Statist
 
 Ik zal de data om moeten zetten in een goed leesbaar csv bestand, en dit vervolgens verwerken in javascript + d3 in html. 
 
-barchart-blocks.png
+![](doc/barchart-blocks.png)
 
 
 
