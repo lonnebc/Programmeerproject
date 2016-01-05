@@ -8,7 +8,7 @@ Om een duidelijk beeld te krijgen van de user interface heb ik een vergelijkbare
 
 ###Data
 
-De data is afkomstig van een Amerikaanse Databank: U.S. Bureau of Labor Statistics. 
+De data is afkomstig van een Amerikaanse Databank: U.S. Bureau of Labor Statistics. Hier kun je de data in een CSV formaat downloaden. Vervolgens zal het omgezet worden in verschillende JSON bestanden, zodat je een goed overzicht hebt van welke data in welke visualisatie gebruikt wordt. Verder zal er op D3-wijze in JavaScript geprogrammeerd worden, welke compatible is met een html bestand. 
 
 ###Doel
 
@@ -22,9 +22,10 @@ http://www.trajectum.hu.nl/node/11011 (kosten studieswitchers)
 
 
 #-------
-a list of classes and public methods (and their return types and/or arguments) that you’ve decided to implement
-advanced sketches of UIs that clearly explain which features are connected to which underlying classes
-a list of APIs and frameworks that you will be using to provide functionality in your app
-a list of data sources, and database tables and fields (and their types) that you’ve decided to implement
+- a list of classes and public methods (and their return types and/or arguments) that you’ve decided to implement
+- advanced sketches of UIs that clearly explain which features are connected to which underlying classes
+- a list of APIs and frameworks that you will be using to provide functionality in your app
+- a list of data sources, and database tables and fields (and their types) that you’ve decided to implement
+
 If your application has multiple independent programs working together (e.g. to clean your dataset) you need to provide a high-level overview of these components and then provide a lowel-level overview of the inner workings of each component.
 
