@@ -6,6 +6,9 @@ Om een duidelijk beeld te krijgen van de user interface heb ik een vergelijkbare
 
 ![](doc/userinterface.png)
 
+Zoekfunctie voorbeeld: http://www.brightpointinc.com/download/autocomplete-source-code/
+Barchars: http://mbostock.github.io/d3/talk/20111116/bar-hierarchy.html
+
 ###Data
 
 De data is afkomstig van een Amerikaanse Databank: U.S. Bureau of Labor Statistics. Hier kun je de data in een CSV formaat downloaden. Vervolgens zal het omgezet worden in verschillende JSON bestanden, zodat je een goed overzicht hebt van welke data in welke visualisatie gebruikt wordt. Verder zal er op D3-wijze in JavaScript geprogrammeerd worden, welke compatible is met een html bestand. 
