@@ -4,6 +4,13 @@
 
 Om een duidelijk beeld te krijgen van de user interface heb ik een vergelijkbare schets gemaakt. Hierbij zal uit de barchart de 'huidige' banenmarkt weergeven worden. Recht hiervan komt er een menu waar je kunt klikken op verschillende kenmerken. De barchart zal dan interactief zijn, dan zodra je klikt op iets uit het menu, de barchart zich hierop aanpast. Verder komt er onder de barchart een soort 'zoekbalk' waar je de sector in kan typen, en hier met de letters die je intypt er voorselectie wordt weergeven. Je kunt dan klikken op een cd sectoren, en hier zien welke soort banen er bij deze sector horen. 
 
+Idee: tree map op basis van sector OF degree. (denk nu aan sector) 
+Hierbij ook filtereren op:
+- kansrijke beroepen (WEL STUDEREN)
+- minder kansrijke beroepen (NIET STUDEREN)
+
+
+
 ![](doc/userinterface.png)
 
 Zoekfunctie voorbeeld: http://www.brightpointinc.com/download/autocomplete-source-code/
