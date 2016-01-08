@@ -1,13 +1,48 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-  		<h1 STYLE="font-size: 22px; font-family: Courier New;">Employment | 2014</h1>
-  		<p STYLE="font-size: 10px; font-family: AppleGothic;">Programmeerproject</p>
-		<div id="container" style="position: relative; width: 1000px; height:500px;"></div>
-		<script src="webpage.js"></script>
-	</head>
-	<body> 
-		<link rel="stylesheet" type="text/css" href="d3map+.css"/>
-		<svg class="chart" style="position: relative ;top: 60px; width: 420px; height:700;"></svg>
-	</body>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type='text/javascript' src="http://d3js.org/d3.v2.js"></script>
+    <script type='text/javascript' src="webpage.js"></script>
+    <style type='text/css'>
+        line.slope-line{
+            stroke:black
+        }
+        text.slope-label{
+            fill:red;
+            font: 10px Arial;
+        }
+    </style>
+</head>
+<body>
+	<br>
+
+
+
+
+
+
+
+	</br>
+<script type='text/javascript'>
+
+var data = {
+    "data":[[["Anesthesiologists", "3.7"]], [["Internists, general", "4.3"]], [["Obstetricians and gynecologists", "4.4"]]]
+,
+    "label":[[["Anesthesiologists", "0.8"]], [["Internists, general", "9.4"]], [["Obstetricians and gynecologists", "8.7"]]]
+};
+
+var slopeGraph = d3.custom.slopegraph();
+d3.select('body')
+    .datum(data)
+    .call(slopeGraph);
+
+slopeGraph.width(500);
+d3.select('body')
+    .call(slopeGraph);
+
+    </script>
+</body>
 </html>

@@ -1,0 +1,23 @@
+#oude html
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+  		<h1 STYLE="font-size: 22px; font-family: Courier New;">Employment | 2014</h1>
+  		<p STYLE="font-size: 10px; font-family: AppleGothic;">Programmeerproject</p>
+		<div id="container" style="position: relative; width: 1000px; height:500px;"></div>
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="webpage.js"></script>
+	</head>
+	<body> 
+		<form>  
+			<label><input type="radio" name="mode" value="size"> Size</label>
+  			<label><input type="radio" name="mode" value="count" checked> Count</label>
+  		</form>
+		<link rel="stylesheet" type="text/css" href="d3map+.css"/>
+		<svg class="chart" style="position: relative ;top: 60px; width: 420px; height:700;"></svg>
+	</body>
+</html>
+
+
+
