@@ -28,7 +28,8 @@ Middelbare scholieren vinden het vaak lastig om een geschikte studie te kiezen, 
 
 http://www.hbostart.nl/ik-weet-echt-niet-welke-studie-ik-moet-kiezen/ (studiekeuze lastig)
 http://www.trajectum.hu.nl/node/11011 (kosten studieswitchers)
-
+http://www.brightpointinc.com/download/radial-progress-source-code/
+http://bl.ocks.org/zbjornson/2547496
 
 
 #-------
