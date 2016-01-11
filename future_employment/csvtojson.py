@@ -24,15 +24,55 @@ with open("dataemployment.csv","rU") as fp:
 	reader = csv.reader(fp, delimiter=',')
 	next(reader, None)
 
-	data = []
+	data = {
+		"name": "education",
+		"children": [
+		{
+			"name": "sector",
+			"children":[]
+		}]
+
+	}
+
+	
 	for lines in reader:
 		splitted = lines[0].split("     ")
-		#year14 = lines[-12]
-		year24 = lines[-11]
-		data.append([[splitted[0]] + [year24[1:]]]) #+ [year24[1:]])
+		# year14 = lines[-12]
+		# year24 = lines[-11]
+		education = lines[-6]
 
-json_data = json.dumps(data)
+
+		if not education in data["children"]:
+		 	data["children"].append(education)
+
+		#[splitted[0]]
+
+		
+
+		# 	data[education] = []
+		#data.append([[splitted[0]] + [year24[1:]]]) #+ [year24[1:]])
+	#print data["children"]
+json_data = json.dumps(data, indent=4)
 print json_data
+
+
+
+
+
+
+
+
+
+
+
+
+	# var = 0 
+	# if 'bla' in ['bla', 'bla1']:
+	# 	var = 1
+	# print var
+
+
+
 
 		# splitted = lines.split(",")
 	 # # 	#titlecode
