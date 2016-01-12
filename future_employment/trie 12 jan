@@ -1,0 +1,35 @@
+import json
+import csv
+
+with open("dataemployment.csv","rU") as fp:
+	reader = csv.reader(fp, delimiter=',')
+	next(reader, None)
+
+	data = {	
+		"name" : "start"	
+		"children": [
+			"name": lines[-6],
+			"children": [
+			{
+				"name": s[0],
+				"children": [
+				{
+					"name": lines[-9], "median-income": lines[-7],
+				}]
+			}]
+		]
+	}
+	
+	for lines in reader:
+
+		splitted = lines[0].split("     ")
+		# year14 = lines[-12]
+		jobs = lines[-11]
+		#education = lines[-6]
+		job = {}
+		job["name"] = "jobs"
+		job["children"] = jobs
+		data.append([[splitted[0]] + [jobs[1:]]]) 
+
+json_data = json.dumps(data, indent=4)
+print json_data

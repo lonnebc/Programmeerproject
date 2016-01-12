@@ -24,40 +24,87 @@ with open("dataemployment.csv","rU") as fp:
 	reader = csv.reader(fp, delimiter=',')
 	next(reader, None)
 
-	data = {
+	data = {	
 		"name": "education",
 		"children": [
-		{
-			"name": "sector",
-			"children":[]
-		}]
-
+			
+			data2 = {
+				"name": []
+			}
+		]
 	}
+	#degree = []	
 
-	
 	for lines in reader:
 		splitted = lines[0].split("     ")
-		# year14 = lines[-12]
-		# year24 = lines[-11]
+		s = splitted[1].split("* ")
 		education = lines[-6]
-
+		change = lines[-9]
+		
+		#data.append([education] + [[splitted[0]] + [change]]) # + [s[1:]])
 
 		if not education in data["children"]:
-		 	data["children"].append(education)
+			data["children"].append(education)
 
-		#[splitted[0]]
+	# for lines2 in reader
+	# 	for education in degree:
+	# 		if degree == lines2[-6]
 
+
+	#print degree
+
+	# jobs = {}
+	# for degree in data["children"]:
+	# 	for lines in reader:
+	# 		
+	# 	jobs["name"] = sector
+	# 	jobs.append(sector)
+				# job = {}
+				# job["name"] = education
+				# data["children"]["name"] = job
 		
-
-		# 	data[education] = []
-		#data.append([[splitted[0]] + [year24[1:]]]) #+ [year24[1:]])
-	#print data["children"]
 json_data = json.dumps(data, indent=4)
 print json_data
 
 
 
 
+#try
+# 	data = []
+# 	for lines in reader:
+
+# 		splitted = lines[0].split("     ")
+# 		# year14 = lines[-12]
+# 		jobs = lines[-11]
+# 		#education = lines[-6]
+# 		job = {}
+# 		job["name"] = "jobs"
+# 		job["children"] = jobs
+# 		data.append([[splitted[0]] + [jobs[1:]]]) 
+
+# json_data = json.dumps(data, indent=4)
+# print json_data
+#endtry
+
+
+#sjoerd
+	# sectors = []
+	# for row in reader:
+	#         sectors.append(row)
+	# 	sectors = sectors[1:]
+	# 	data_dict = {}
+	# 	educationlist = sectors[-6]
+	# 	print educationlist
+	# 	#counter = 0
+	# 	for degree in educationlist:
+	# 		degreedict = {}
+	# 		for entry in sector:
+	# 			sector = entry[-3]
+	# 			change = entry[-9]
+	# 			degreedict[sector] = change
+	# 		data_dict[degree] = degreedict
+		#counter += 1
+#eindesjoerd
 
 
 
