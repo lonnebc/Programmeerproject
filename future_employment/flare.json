@@ -1,9 +1,8 @@
-
 {
- "name": "flare",
+ "name": "education",
  "children": [
   {
-   "name": "analytics",
+   "name": "Bachelor degree",
    "children": [
     {
      "name": "cluster",
