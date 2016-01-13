@@ -304,7 +304,7 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
         scale = zoomListener.scale();
         x = -source.y0;
         y = -source.x0;
-        x = x * scale + viewerWidth / 2;
+        x = x * scale + viewerWidth / 4;
         y = y * scale + viewerHeight / 2;
         d3.select('g').transition()
             .duration(duration)
@@ -316,15 +316,34 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
     // Toggle children function
 
     function toggleChildren(d) {
+        //dicht
         if (d.children) {
             d._children = d.children;
             d.children = null;
-        } else if (d._children) {
+        } 
+        // heropen 
+        else if (d._children) {
             d.children = d._children;
             d._children = null;
         }
+        // else {
+        //     closeSiblings(d);
+        //     d.children = d._children;
+        //     d._children = null;
+        // }
         return d;
     }
+    
+    // function closeSiblings(d) {
+    //     if (!d.parent) return; // root case
+    //     d.parent.children.forEach(function(d1) {
+    //         if (d1 === d || !d1.children) return;
+    //         d1._children = d1.children;
+    //         d1.children = null;
+    //     });
+    // }
+
+
 
     // Toggle children on click.
 
