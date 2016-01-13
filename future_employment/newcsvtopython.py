@@ -12,14 +12,15 @@ with open("dataemployment.csv","rU") as fp:
 	}
 
 	for lines in reader:
-		
+		e = lines[0].split(",")
 		splitted = lines[0].split("     ")
 		#s = splitted[1].split("* ")
-		education = lines[-6]
+		education = e[-6]
+		
 		#change = lines[-9]
 
-# 		if education == "Doctoral or professional degree":
-# 			data["children"].append(splitted[0])
+		if education == "Doctoral or professional degree":
+			data["children"].append(splitted[0])
 
-# json_data = json.dumps(data, indent=4)
-# print json_data
+json_data = json.dumps(data, indent=4)
+print json_data
