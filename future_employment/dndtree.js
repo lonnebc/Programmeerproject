@@ -8,7 +8,7 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
     var selectedNode = null;
     var draggingNode = null;
     // panning variables
-    var panSpeed = 200;
+    var panSpeed = 100;
     var panBoundary = 20; // Within 20px from edges will pan when dragging.
     // Misc. variables
     var i = 0;
@@ -16,7 +16,7 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
     var root;
 
     // size of the diagram
-    var viewerWidth = $(document).width();
+    var viewerWidth = 1100
     var viewerHeight = $(document).height();
 
     var tree = d3.layout.tree()
@@ -343,8 +343,6 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
     //     });
     // }
 
-
-
     // Toggle children on click.
 
     function click(d) {
@@ -352,7 +350,19 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
         d = toggleChildren(d);
         update(d);
         centerNode(d);
+        console.log("click!")
+
     }
+    //**********************************//
+
+
+
+
+
+    //**********************************//
+
+
+
 
     function update(source) {
         // Compute the new height, function counts total children of root node and sets tree height accordingly.
@@ -375,8 +385,13 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
         tree = tree.size([newHeight, viewerWidth]);
 
         // Compute the new tree layout.
+
+        //aanpassen eerste
+
         var nodes = tree.nodes(root).reverse(),
             links = tree.links(nodes);
+            
+            console.log(root.children)
 
         // Set widths between levels based on maxLabelLength.
         nodes.forEach(function(d) {
@@ -534,6 +549,16 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
     root = treeData;
     root.x0 = viewerHeight / 2;
     root.y0 = 0;
+
+    //function first view GOSIA?
+    // function firstview(source){
+    // var firstview = 1
+    // if firstview {
+    //     root = root //first parent and children
+    //     firstview = 0
+    // }
+    console.log(root)
+    //}
 
     // Layout the tree initially and center on the root node.
     update(root);
